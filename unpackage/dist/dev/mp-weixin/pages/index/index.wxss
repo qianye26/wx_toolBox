@@ -1,0 +1,36 @@
+.home .toolList {
+  width: 750rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.home .toolList .list-item {
+  width: 187.5rpx;
+  height: 187.5rpx;
+  margin: 30rpx 0 10rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.home .toolList .list-item image {
+  height: 130rpx;
+  width: 130rpx;
+  margin-bottom: 10rpx;
+}
+.home .toolList .list-item text {
+  font-size: 30rpx;
+}
+

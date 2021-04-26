@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "天气预报",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#00aaff",
+  "usingComponents": {}
+}

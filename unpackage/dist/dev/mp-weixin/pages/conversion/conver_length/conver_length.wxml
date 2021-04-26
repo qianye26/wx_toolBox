@@ -1,0 +1,1 @@
+<view class="length"><conver-list vue-id="da9742a6-1" list="{{lists}}" bind:__l="__l"></conver-list><button size="mini" type="primary">重置</button></view>

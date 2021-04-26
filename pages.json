@@ -1,0 +1,70 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/calculator/calculator",
+			"style": {
+				"navigationBarTitleText": "计算器",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/conversion/conversion",
+			"style": {
+				"navigationBarTitleText": "单位换算",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/conversion/conver_length/conver_length",
+			"style": {
+				"navigationBarTitleText": "长度换算",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "pages/weather/weather",
+			"style": {
+				"navigationBarTitleText": "天气预报",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#00aaff"
+			},
+			"permission": {
+			    "scope.userLocation": {
+			      "desc": "您的位置信息将用于获取天气预报信息"
+			    }
+			 }
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "工具箱",
+		"navigationBarBackgroundColor": "#45b787",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#ccc",
+		"selectedColor": "#45b787",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/active-home.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "个人",
+				"iconPath": "static/icon/my.png",
+				"selectedIconPath": "static/icon/active-my.png"
+			}
+		]
+	}
+}

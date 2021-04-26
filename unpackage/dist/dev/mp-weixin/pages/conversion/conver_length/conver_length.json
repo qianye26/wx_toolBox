@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "长度换算",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "conver-list": "/components/converList"
+  }
+}

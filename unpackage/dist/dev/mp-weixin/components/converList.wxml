@@ -1,0 +1,1 @@
+<view class="list"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><view class="list-item"><view class="name">{{item.name}}</view><view class="input"><input type="number" placeholder="请输入数字"/><uni-icons vue-id="{{'5c61e92c-1-'+__i0__}}" type="forward" size="25" bind:__l="__l"></uni-icons></view></view></block></view>

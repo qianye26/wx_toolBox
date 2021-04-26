@@ -1,0 +1,74 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+.weather .main {
+  width: 100%;
+  height: 500rpx;
+  background-image: -webkit-linear-gradient(bottom, #fff, #3a8be6);
+  background-image: linear-gradient(to top, #fff, #3a8be6);
+  position: relative;
+  border-bottom: 1rpx solid #ccc;
+}
+.weather .main .main_info {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.weather .main .main_info .number {
+  font-size: 140rpx;
+}
+.weather .main .main_info text {
+  font-size: 50rpx;
+}
+.weather .main .sub_info {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.weather .main .sub_info text {
+  opacity: 0.8;
+  font-size: 30rpx;
+}
+.weather .main .sub_info .wind {
+  margin-right: 40rpx;
+}
+.weather .future {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30rpx 20rpx;
+  background-color: #fff;
+}
+.weather .future .today {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  border-right: 2rpx solid #ccc;
+}
+.weather .future .today .info .number {
+  margin-left: 130rpx;
+}
+.weather .future .today .status {
+  float: right;
+  margin: 20rpx 30rpx 0 0;
+}
+.weather .future .tomorrow {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  margin-left: 30rpx;
+}
+.weather .future .tomorrow .info .number {
+  margin-left: 130rpx;
+}
+.weather .future .tomorrow .status {
+  float: right;
+  margin: 20rpx 30rpx 0 0;
+}
+
