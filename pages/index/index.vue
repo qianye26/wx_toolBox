@@ -3,18 +3,28 @@
 		<view class="toolList">
 			<!-- 计算器模块 -->
 			<view class="list-item" @click="GoCalculator">
-				<image src="../../static/tool/Calculator.jpg" mode="aspectFill"></image>
+				<image src="../../static/tool/Calculator.jpg" mode="scaleToFill"></image>
 				<text>计算器</text>
 			</view>
 			<!-- 单位换算模块 -->
 			<view class="list-item" @click="GoConservison">
-				<image src="../../static/tool/conversion.jpg" mode="aspectFill"></image>
+				<image src="../../static/tool/conversion.jpg" mode="scaleToFill"></image>
 				<text>单位换算</text>
 			</view>
 			<!-- 天气预报 -->
 			<view class="list-item" @click="GoWeather">
-				<image src="../../static/tool/weather.jpg" mode="aspectFill"></image>
+				<image src="../../static/tool/weather.jpg" mode="scaleToFill"></image>
 				<text>天气预报</text>
+			</view>
+			<!-- 查手机号模块 -->
+			<view class="list-item" @click="GoFindTell">
+				<image src="../../static/tool/findtell.jpg" mode="scaleToFill"></image>
+				<text>查手机号</text>
+			</view>
+			<!-- 计时器模块 -->
+			<view class="list-item" @click="ToTimer">
+				<image src="../../static/tool/findtell.jpg" mode="scaleToFill"></image>
+				<text>计时器</text>
 			</view>
 		</view>
 	</view>
@@ -43,6 +53,18 @@ export default {
 		GoWeather() {
 			uni.navigateTo({
 				url:'../weather/weather'
+			})
+		},
+		// 进入查找手机号模块
+		GoFindTell() {
+			uni.navigateTo({
+				url:'../findtell/findtell'
+			})
+		},
+		// 进入计时器模块
+		ToTimer() {
+			uni.navigateTo({
+				url:'../timer/timer'
 			})
 		}
 	}

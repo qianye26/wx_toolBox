@@ -29,25 +29,45 @@
 				"navigationBarTitleText": "长度换算",
 				"enablePullDownRefresh": false
 			}
-		},{
+		}, {
 			"path": "pages/weather/weather",
 			"style": {
 				"navigationBarTitleText": "天气预报",
 				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor":"#00aaff"
+				"navigationBarBackgroundColor": "#00aaff"
 			},
 			"permission": {
-			    "scope.userLocation": {
-			      "desc": "您的位置信息将用于获取天气预报信息"
-			    }
-			 }
+				"scope.userLocation": {
+					"desc": "您的位置信息将用于获取天气预报信息"
+				}
+			}
+		}, {
+			"path": "pages/findtell/findtell",
+			"style": {
+				"navigationBarTitleText": "查手机号",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	],
+	    ,{
+            "path" : "pages/timer/timer",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "计时器",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "工具箱",
 		"navigationBarBackgroundColor": "#45b787",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-button": "/wxcomponents/vant-weapp/button/index",
+			"van-field": "/wxcomponents/vant-weapp/field/index"
+		}
 	},
 	"tabBar": {
 		"color": "#ccc",

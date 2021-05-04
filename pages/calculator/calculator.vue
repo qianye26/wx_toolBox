@@ -156,7 +156,7 @@ export default {
 	page {
 		height: 100%;
 		width: 100%;
-	background-color: #f3f3f3;
+		background-color: #f3f3f3;
 	}
 .calculator {
 	// width: 750%;

@@ -17,6 +17,18 @@
           "pathName": "pages/weather/weather",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "查手机号",
+          "pathName": "pages/findtell/findtell",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "长度换算",
+          "pathName": "pages/conversion/conver_length/conver_length",
+          "query": "",
+          "scene": null
         }
       ]
     }

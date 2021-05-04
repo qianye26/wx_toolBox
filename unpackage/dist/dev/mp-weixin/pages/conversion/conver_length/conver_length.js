@@ -130,7 +130,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var converList = function converList() {__webpack_require__.e(/*! require.ensure | components/converList */ "components/converList").then((function () {return resolve(__webpack_require__(/*! ../../../components/converList.vue */ 74));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var converList = function converList() {__webpack_require__.e(/*! require.ensure | components/converList */ "components/converList").then((function () {return resolve(__webpack_require__(/*! ../../../components/converList.vue */ 88));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
 
 
 
@@ -142,39 +150,65 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   data: function data() {
     return {
-      lists: [
-      {
-        id: 1,
-        name: '公里(kilometre)' },
-
-      {
-        id: 2,
-        name: '米(metre)' },
-
-      {
-        id: 3,
-        name: '分米(decimeter)' },
-
-      {
-        id: 4,
-        name: '厘米(centimeter)' },
-
-      {
-        id: 5,
-        name: '毫米(millimeter)' },
-
-      {
-        id: 6,
-        name: '微米(micrometer)' }],
-
-
+      qianmi: '',
+      mi: Number,
+      fenmi: Number,
+      limi: Number,
+      haomi: Number,
+      weimi: Number,
       data: 0 };
 
   },
   components: {
     'conver-list': converList },
 
-  methods: {} };exports.default = _default;
+  methods: {
+    changeqianmi: function changeqianmi(e) {
+      console.log(e.detail);
+      this.qianmi = e.detail;
+    },
+    changemi: function changemi(e) {
+      this.mi = e.detail;
+    },
+    changefenmi: function changefenmi(e) {
+      this.fenmi = e.detail;
+    },
+    changelimi: function changelimi(e) {
+      this.limi = e.detail;
+    },
+    changehaomi: function changehaomi(e) {
+      this.haomi = e.detail;
+    },
+    changeweimi: function changeweimi(e) {
+      this.weimi = e.detail;
+    },
+    reset: function reset() {
+      this.qianmi = 0;
+    } },
+
+  watch: {
+    qianmi: function qianmi(value, old) {
+      this.mi = value * 1000;
+    },
+    mi: function mi(value, old) {
+      this.qianmi = value / 1000;
+      this.fenmi = value * 10;
+    },
+    fenmi: function fenmi(value, old) {
+      this.limi = value * 10;
+      this.mi = value / 10;
+    },
+    limi: function limi(value, old) {
+      this.haomi = value * 10;
+      this.fenmi = value / 10;
+    },
+    haomi: function haomi(value, old) {
+      this.weimi = value * 1000;
+      this.limi = value / 10;
+    },
+    weimi: function weimi(value, old) {
+      this.haomi = value / 1000;
+    } } };exports.default = _default;
 
 /***/ }),
 

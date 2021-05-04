@@ -1,0 +1,1 @@
+<view class="timer"><van-count-down vue-id="bb9d8698-1" time="{{time}}" data-com-type="wx" bind:__l="__l"></van-count-down></view>

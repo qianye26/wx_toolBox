@@ -6,6 +6,10 @@ page {
 button {
   display: block;
   width: 30%;
-  margin: 50rpx auto;
+  position: relative;
+  top: 50rpx;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
